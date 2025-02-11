@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="content">
+        <div id="Home">
+            <div class="bkg-image">
+                <div class="bkg-text">
+                    <font size="7" face="verdana" color="white">
+                        <center><b>BROS</b></center>
+                    </font>
+                    <br><br><br>
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <center>
+                            <div class="boxed">
+                                <h2 align="center"><b>Fill the details:</b></h2>
+                                <br>
+                                <label for="us"><b><font size="4">USERNAME:&emsp;</font></b></label>
+                                <input type="text" id="us" name="us" placeholder="Enter your user-ID" required>
+                                <br><br>
+                                <label for="pic"><b><font size="4">PINCODE:&emsp;</font></b></label>&emsp;&nbsp;
+                                <input type="text" id="pic" name="pic" placeholder="Enter Area Pincode" required>
+                                <br><br>
+                                <label for="pp"><b><font size="4">PEOPLE:&emsp;</font></b></label>&emsp;&emsp;
+                                <input type="number" id="pp" name="pp" placeholder="No. of Occupants" required>
+                                <br><br>
+                                <label for="clg"><b><font size="4">COLLEGE:&emsp;</font></b></label>&emsp;&nbsp;
+                                <input type="text" id="clg" name="clg" placeholder="Nearby colleges" required>
+                                <br><br>
+                                <label for="rt"><b><font size="4">RENT:&emsp;</font></b></label>&emsp;&emsp;&ensp;&emsp;
+                                <input type="number" id="rt" name="rt" placeholder="Rent per month" required>
+                                <br><br>
+                                <button type="submit"><b>SUBMIT</b></button>
+                            </div>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

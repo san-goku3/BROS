@@ -1,0 +1,71 @@
+<!-- res.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .container {
+      margin: 20px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table th, .table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .table th {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Display Error Message if Invalid Pin Code Format -->
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <!-- Display Search Results -->
+    {% if ds %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>USERID</th>
+          <th>PINCODE</th>
+          <th>PEOPLE</th>
+          <th>COLLEGE</th>
+          <th>RENT (p/m)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in ds %}
+          <tr>
+            <td>{{ i.us }}</td>
+            <td>{{ i.pic }}</td>
+            <td>{{ i.pp }}</td>
+            <td>{{ i.clg }}</td>
+            <td>{{ i.rt }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p>No properties found for this pin code.</p>
+    {% endif %}
+  </div>
+</body>
+</html>

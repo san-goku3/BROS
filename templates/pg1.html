@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="content">
+        <div id="Home">
+            {% if user.is_authenticated %}
+            <div class="bkg-image">
+                <div class="bkg-text">
+                    <font size="7" face="verdana" color="white">
+                        <center><b>BROS</b></center>
+                    </font>
+                    <br><br><br><br><br><br>
+                    <center>
+                        <div class="boxed">
+                            <h1 align="center">Rooms at your ease!!</h1>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            {% else %}
+            <div class="bkg-image">
+                <div class="bkg-text">
+                    <font size="7" face="verdana" color="white">
+                        <center><b>BROS</b></center>
+                    </font>
+                    <br><br><br><br><br><br>
+                    <center>
+                        <div class="boxed">
+                            <h1 align="center">Rooms at your ease!!</h1>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div id="About">
+                <center><font size="7" color="white"><b>About</b></font></center>
+                <h2>
+                    • With the students coming as freshmen to the college, new to the place, they need an appropriate place to settle for which they first try for campus hostel accommodation, but they are relatively costly, limited, and unaffordable for many.
+                    <br><br>
+                    • So, now they try to find flats or rooms outside campus and at a cheaper rent with a grown market for availability of resources such as vegetables, medicines, hospitals, etc.
+                    <br><br>
+                    • We come across this problem and tried to resolve it in a modern way. We designed a website that will give the students knowledge about any vacant rooms nearby the campus.
+                </h2>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <p style="text-align:center"><font size="7" color="white">Contact Us</font></p>
+            <div id="Contact" class="back-contact">
+                <div class="cc">
+                    <form action="" method="post" enctype="text/plain">
+                        <label>First Name <span class="imp">*</span></label>
+                        <label style="margin-left: 185px">Last Name<span class="imp">*</span></label><br>
+                        <center>
+                            <input type="text" name="fname" style="margin-right: 10px; width: 175px" required>
+                            <input type="text" name="lname" style="width: 175px" required><br>
+                        </center>
+                        <label>Email <span class="imp">*</span></label><br>
+                        <input type="email" name="email" style="width: 100%" required><br>
+                        <label>Message <span class="imp">*</span></label><br>
+                        <textarea name="message" style="width: 100%" required></textarea><br>
+                        <label>Additional Details</label><br>
+                        <textarea name="additional" style="width: 100%"></textarea><br>
+                        <button type="submit" id="csubmit"><b>Send Message</b></button>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
