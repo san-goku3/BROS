@@ -13,64 +13,37 @@
                         {% csrf_token %}
                         <center>
                             <div class="boxed">
-                                <h2 align="center"><b>Fill the details:</b></h2>
-                                <br><br>
-                                <label for="uname"><b><font size="4">USERNAME &emsp;</font></b></label>
-                                <input type="text" id="uname" name="uname" placeholder="Enter Gmail" required>
-                                <br><br>
-                                <label for="psw"><b><font size="4">PASSWORD &emsp;</font></b></label>
-                                <input type="password" id="p1" name="p1" placeholder="Enter password" required>
-                                <br><br>
-                                <label for="fname"><b><font size="4">FIRST NAME &emsp;</font></b></label>
-                                <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
-                                <br><br>
-                                <label for="lname"><b><font size="4">LAST NAME &emsp;</font></b></label>&nbsp;
-                                <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
-                                <br><br>
-                                <label for="nb"><b><font size="4">CONTACT &emsp;</font></b></label>&emsp;&emsp;&nbsp;
-                                <input type="number" id="nb" name="nb" placeholder="Enter contact no" min="1111111111" max="99999999999" required>
+                                <h3 align="center"><b>Fill the details:</b></h3>                                
+                                <!-- Table Layout for Form -->
+                                <table>
+                                    <tr>
+                                        <td><label for="uname"><b><font size="4">USERNAME</font></b></label></td>
+                                        <td><input type="text" id="uname" name="uname" placeholder="Enter Gmail" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="psw"><b><font size="4">PASSWORD</font></b></label></td>
+                                        <td><input type="password" id="p1" name="p1" placeholder="Enter password" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="fname"><b><font size="4">FIRST NAME</font></b></label></td>
+                                        <td><input type="text" id="fname" name="fname" placeholder="Enter first name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="lname"><b><font size="4">LAST NAME</font></b></label></td>
+                                        <td><input type="text" id="lname" name="lname" placeholder="Enter last name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="nb"><b><font size="4">CONTACT</font></b></label></td>
+                                        <td><input type="number" id="nb" name="nb" placeholder="Enter contact no" min="1111111111" max="99999999999" required></td>
+                                    </tr>
+                                </table>
+
                                 <br><br>
                                 <button type="submit"><b>Sign up</b></button>
                             </div>
                         </center>
                     </form>
                 </div>
-            </div>
-        </div>
-
-        <br><br><br><br><br><br><br><br><br><br>
-        <div id="About">
-            <center>
-                <font size="7" color="white"><b>About</b></font>
-            </center>
-            <h2>
-                • With the students coming as freshmen to the college, new to the place, they need an appropriate place to settle for which they first try for campus hostel accommodation, but they are relatively costly, limited, and unaffordable for many.
-                <br><br>
-                • So, now they try to find flats or rooms outside campus and at a cheaper rent with a grown market for availability of resources such as vegetables, medicines, hospitals, etc.
-                <br><br>
-                • We come across this problem and tried to resolve it in a modern way. We designed a website that will give the students knowledge about any vacant rooms nearby the campus.
-            </h2>
-        </div>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <p style="text-align:center">
-            <font size="7" color="white">Contact us</font>
-        </p>
-        <div id="Contact" class="back-contact">
-            <div class="cc">
-                <form action="" method="post" enctype="text/plain">
-                    <label>First Name <span class="imp">*</span></label>
-                    <label style="margin-left: 185px">Last Name<span class="imp">*</span></label><br>
-                    <center>
-                        <input type="text" name="fname" style="margin-right: 10px; width: 175px" required>
-                        <input type="text" name="lname" style="width: 175px" required><br>
-                    </center>
-                    <label>Email <span class="imp">*</span></label><br>
-                    <input type="email" name="mail" style="width: 100%" required><br>
-                    <label>Message <span class="imp">*</span></label><br>
-                    <textarea name="message" style="width: 100%" required></textarea><br>
-                    <button type="submit" id="csubmit"><b>Send Message</b></button>
-                </form>
             </div>
         </div>
     </div>
